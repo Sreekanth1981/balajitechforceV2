@@ -1,91 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>BalajiTechforce - Salesforce Training</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-            text-align: center;
-        }
-        header {
-            background: #4CAF50;
-            padding: 20px;
-            color: white;
-        }
-        section {
-            padding: 20px;
-        }
-        form {
-            background: white;
-            padding: 20px;
-            max-width: 400px;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Balaji Techforce - Salesforce Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #007bff;
+      padding: 10px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0056b3;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #004494;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #courses, #testimonials, #contact {
+      background-color: #f2f2f2;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .course-list, .testimonial-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .course-item, .testimonial-item {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 280px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input, select, textarea {
+      width: 90%;
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 12px;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>BalajiTechforce</h1>
-        <p>Master Salesforce with Expert-Led Training</p>
-    </header>
 
-    <section>
-        <h2>Enroll Now</h2>
-        <form id="enrollForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-            <button type="submit">Enroll Now</button>
-        </form>
-    </section>
+<header>
+  <!-- Replace below with your logo -->
+  <h1>Balaji Techforce</h1>
+  <p>Empowering Salesforce Professionals</p>
+</header>
 
-    <footer>
-        &copy; 2025 BalajiTechforce. All rights reserved.
-    </footer>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#courses">Courses</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact Us</a>
+</nav>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxlQhKzhtmbaNxYnsRpv62lhCFEqKHO74Kqoy7gHHo3ui1cfspG7cUiQZnJeVKQmK6KUA/exec';
-        const form = document.getElementById('enrollForm');
+<section id="home">
+  <h2>Welcome to Balaji Techforce</h2>
+  <p>Your trusted partner for Salesforce training and career growth!</p>
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enroll Now</button>
+</section>
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    window.location.href = "thankyou.html";
-                })
-                .catch(error => console.error('Error!', error.message));
-        });
-    </script>
+<section id="courses">
+  <h2>Our Courses</h2>
+  <div class="course-list">
+    <div class="course-item">
+      <h3>Salesforce Admin</h3>
+      <p>Learn the essentials of Salesforce Administration, Reports, and Dashboards.</p>
+    </div>
+    <div class="course-item">
+      <h3>Salesforce Developer</h3>
+      <p>Master Apex, Triggers, SOQL, SOSL, and Platform Development basics.</p>
+    </div>
+    <div class="course-item">
+      <h3>LWC & Advanced Apex</h3>
+      <p>Deep dive into Lightning Web Components and advanced Apex programming.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial-list">
+    <div class="testimonial-item">
+      <p>"Amazing teaching, hands-on exercises helped me clear my Admin certification!"</p>
+      <strong>- Priya S.</strong>
+    </div>
+    <div class="testimonial-item">
+      <p>"Practical and real-world examples made learning Salesforce very easy."</p>
+      <strong>- Rajesh K.</strong>
+    </div>
+    <div class="testimonial-item">
+      <p>"Thanks to Balaji Techforce, I landed my dream Salesforce Developer job!"</p>
+      <strong>- Anjali P.</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form method="POST" action="https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <select name="Course" required>
+      <option value="">Select Course</option>
+      <option value="Salesforce Admin">Salesforce Admin</option>
+      <option value="Salesforce Developer">Salesforce Developer</option>
+      <option value="LWC & Advanced Apex">LWC & Advanced Apex</option>
+    </select>
+    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Balaji Techforce. All rights reserved.
+</footer>
+
 </body>
 </html>
