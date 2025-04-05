@@ -1,132 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Balajitechforce - Salesforce Training Experts</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balajitechforce - Salesforce Training</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #e0f7ff, #ffffff);
+      color: #003366;
     }
-    .social-links a {
-      margin: 0 10px;
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
       text-decoration: none;
-      color: #333;
+      font-weight: bold;
     }
-    .testimonials {
-      background: #f9f9f9;
-      padding: 50px 0;
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80') no-repeat center center/cover;
+      color: white;
     }
-    .testimonial {
-      max-width: 600px;
-      margin: 0 auto 30px;
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .button {
+      background-color: #0056b3;
+      padding: 0.75rem 2rem;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .courses {
+      padding: 4rem 2rem;
       text-align: center;
     }
-    .testimonial p {
-      font-style: italic;
+
+    .courses h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
-    .testimonial h4 {
-      margin-top: 10px;
-      font-weight: bold;
+
+    .course-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .course-item {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .course-list {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="container">
-      <div class="logo">Balajitechforce</div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="logo"><strong>Balajitechforce</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="hero" id="home">
-    <div class="container">
-      <h1>Empowering Your Salesforce Career</h1>
-      <p>Expert-Led Salesforce Training and Career Coaching</p>
-      <a href="#contact" class="btn-primary">Get Started</a>
-    </div>
+  <section class="hero">
+    <h1>Launch Your Salesforce Career with Confidence</h1>
+    <p>Expert-Led Training | Real-World Projects | 100% Career Support</p>
+    <a class="button" href="#contact">Enroll Now</a>
   </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <h2>About Balajitechforce</h2>
-      <p>Balajitechforce is committed to empowering professionals with the skills needed to thrive in the Salesforce ecosystem. With real-world experience and hands-on projects, we prepare you for career success.</p>
-    </div>
-  </section>
-
-  <section class="courses" id="courses">
-    <div class="container">
-      <h2>Our Courses</h2>
-      <ul>
-        <li>Salesforce Administrator</li>
-        <li>Salesforce Business Analyst</li>
-        <li>Salesforce Developer</li>
-        <li>Salesforce Revenue Cloud Expert</li>
-        <li>Salesforce Platform App Builder</li>
-        <li>Salesforce LWC Developer</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="why-choose">
-    <div class="container">
-      <h2>Why Choose Us?</h2>
-      <div class="features">
-        <div class="feature">
-          <h3>Expert Trainers</h3>
-          <p>Learn from experienced Salesforce professionals.</p>
-        </div>
-        <div class="feature">
-          <h3>Live Projects</h3>
-          <p>Get hands-on practice with real-world Salesforce projects.</p>
-        </div>
-        <div class="feature">
-          <h3>Career Support</h3>
-          <p>Interview prep, resume reviews, and career guidance included.</p>
-        </div>
+  <section id="courses" class="courses">
+    <h2>Our Popular Courses</h2>
+    <div class="course-list">
+      <div class="course-item">
+        <h3>Salesforce Admin Certification</h3>
+        <p>Master Salesforce fundamentals and get certified.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="container">
-      <h2>What Our Students Say</h2>
-      <div class="testimonial">
-        <p>"Balajitechforce transformed my Salesforce skills and boosted my career. The hands-on projects and coaching were amazing!"</p>
-        <h4>- Priya S.</h4>
+      <div class="course-item">
+        <h3>Salesforce Developer Bootcamp</h3>
+        <p>Learn Apex, LWC, and Visualforce hands-on.</p>
       </div>
-      <div class="testimonial">
-        <p>"The best Salesforce training I have ever attended. The trainers were knowledgeable and supportive throughout."</p>
-        <h4>- Ramesh K.</h4>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:support@balajitechforce.com">support@balajitechforce.com</a></p>
-      <p>Follow us:</p>
-      <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
+      <div class="course-item">
+        <h3>Revenue Cloud Specialization</h3>
+        <p>Deep dive into CPQ, Billing, and Revenue Operations.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Balajitechforce. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Balajitechforce. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
