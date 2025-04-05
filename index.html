@@ -23,6 +23,7 @@
       display: flex;
       justify-content: center;
       background-color: #0056b3;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -106,7 +107,7 @@
 <body>
 
 <header>
-  <!-- Replace below with your logo -->
+  <img src="https://via.placeholder.com/150x50?text=Balaji+Techforce" alt="Balaji Techforce Logo">
   <h1>Balaji Techforce</h1>
   <p>Empowering Salesforce Professionals</p>
 </header>
@@ -155,29 +156,24 @@
     </div>
     <div class="testimonial-item">
       <p>"Thanks to Balaji Techforce, I landed my dream Salesforce Developer job!"</p>
-      <strong>- Anjali P.</strong>
+      <strong>- Anjali D.</strong>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <form method="POST" action="https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec">
-    <input type="text" name="Name" placeholder="Your Name" required>
-    <input type="email" name="Email" placeholder="Your Email" required>
-    <select name="Course" required>
-      <option value="">Select Course</option>
-      <option value="Salesforce Admin">Salesforce Admin</option>
-      <option value="Salesforce Developer">Salesforce Developer</option>
-      <option value="LWC & Advanced Apex">LWC & Advanced Apex</option>
-    </select>
-    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
-    <button type="submit">Submit</button>
+  <form action="mailto:support@balajitechforce.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
   </form>
 </section>
 
 <footer>
-  &copy; 2025 Balaji Techforce. All rights reserved.
+  <p>&copy; 2025 Balaji Techforce. All Rights Reserved.</p>
 </footer>
 
 </body>
