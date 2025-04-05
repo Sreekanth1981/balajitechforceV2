@@ -2,146 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Balajitechforce - Learn Salesforce the Right Way</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f9fc;
-      color: #333;
-    }
-    nav {
-      background: #0056d2;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    nav .logo {
-      display: flex;
-      align-items: center;
-    }
-    nav img {
-      height: 50px;
-      margin-right: 10px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li {
-      margin-left: 20px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .hero {
-      background: linear-gradient(to right, #0056d2, #007bff);
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #0056d2;
-    }
-    .section p {
-      font-size: 18px;
-      color: #555;
-    }
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact-form button {
-      background: #0056d2;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .contact-form button:hover {
-      background: #0041a3;
-    }
-    footer {
-      background: #003580;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn Salesforce from experts at Balajitechforce. Enroll in our professional Salesforce training programs and elevate your career.">
+  <meta name="keywords" content="Salesforce training Hyderabad, Salesforce coaching, Salesforce admin, Salesforce developer, Balajitechforce">
+  <meta name="author" content="Balajitechforce">
+  <title>Balajitechforce - Salesforce Training in Hyderabad</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-<nav>
-  <div class="logo">
-    <img src="https://via.placeholder.com/50x50.png?text=BTF" alt="Balajitechforce Logo">
+<!-- Loading Spinner -->
+<div id="loader" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+  <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar" class="fixed w-full bg-white shadow-md z-50 transition-all">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <a href="#" class="text-2xl font-bold text-blue-600">Balajitechforce</a>
+    <div>
+      <a href="#about" class="px-4 hover:text-blue-600">About</a>
+      <a href="#courses" class="px-4 hover:text-blue-600">Courses</a>
+      <a href="#contact" class="px-4 hover:text-blue-600">Contact</a>
+    </div>
   </div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#courses">Courses</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
 </nav>
 
-<section class="hero" id="home">
-  <h1>Welcome to Balajitechforce</h1>
-  <p>Empowering Careers in Salesforce for Students, Freshers, and Job Seekers</p>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 text-center bg-gradient-to-r from-blue-500 to-blue-700 text-white fade-section">
+  <div class="container mx-auto">
+    <h1 class="text-5xl font-bold mb-4">Master Salesforce with Balajitechforce</h1>
+    <p class="text-lg mb-8">Professional Training | Real-world Projects | Expert Guidance</p>
+    <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition">Join Now</a>
+  </div>
 </section>
 
-<section class="section" id="courses">
-  <h2>Our Courses</h2>
-  <p>Learn Salesforce Admin, Developer, and Revenue Cloud from Experts!</p>
+<!-- About Section -->
+<section id="about" class="py-20 fade-section">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8 text-blue-600">About Us</h2>
+    <p class="max-w-2xl mx-auto text-lg">At Balajitechforce, we offer comprehensive Salesforce training programs tailored to industry needs. Our mission is to empower you with the skills and certifications required to build a successful Salesforce career.</p>
+  </div>
 </section>
 
-<section class="section" id="contact">
-  <h2>Contact Us</h2>
-  <div class="contact-form">
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+<!-- Courses Section -->
+<section id="courses" class="py-20 bg-white fade-section">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8 text-blue-600">Courses Offered</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold mb-4">Salesforce Admin</h3>
+        <p>Get started with Salesforce fundamentals, configuration, and automation essentials.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold mb-4">Salesforce Developer</h3>
+        <p>Learn Apex coding, Visualforce, LWC, and advanced development on Salesforce Platform.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold mb-4">Salesforce Revenue Cloud</h3>
+        <p>Master CPQ, Billing, Revenue Recognition, and Lead-to-Cash processes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 fade-section">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8 text-blue-600">Get In Touch</h2>
+    <form action="https://docs.google.com/forms/d/e/FORM_ID/formResponse" method="POST" target="_blank" class="max-w-lg mx-auto space-y-6">
+      <input type="text" name="entry.1234567890" placeholder="Your Name" required class="w-full p-3 rounded border">
+      <input type="email" name="entry.0987654321" placeholder="Your Email" required class="w-full p-3 rounded border">
+      <textarea name="entry.1122334455" placeholder="Your Message" required class="w-full p-3 rounded border"></textarea>
+      <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition">Send Message</button>
     </form>
   </div>
 </section>
 
-<footer>
-  &copy; 2025 Balajitechforce. All rights reserved.
+<!-- Footer -->
+<footer class="py-8 text-center text-gray-600">
+  <p>© 2025 Balajitechforce. All rights reserved.</p>
 </footer>
+
+<!-- JavaScript -->
+<script>
+  // Loading Spinner
+  window.addEventListener('load', () => {
+    document.getElementById('loader').style.display = 'none';
+  });
+
+  // Scroll Animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+      }
+    });
+  });
+  document.querySelectorAll('.fade-section').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Sticky Navbar Color Change
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
+    } else {
+      navbar.classList.remove('bg-blue-600', 'text-white', 'shadow-lg');
+    }
+  });
+</script>
+
+<!-- Animation Styles -->
+<style>
+  .fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
 
 </body>
 </html>
