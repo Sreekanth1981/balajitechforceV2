@@ -1,144 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Balajitechforce - Salesforce Training</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Balajitechforce - Learn Salesforce the Right Way</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #e0f7ff, #ffffff);
-      color: #003366;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fc;
+      color: #333;
     }
-
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 1rem 2rem;
+    nav {
+      background: #0056d2;
+      padding: 10px 20px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
+    }
+    nav .logo {
+      display: flex;
       align-items: center;
     }
-
-    nav a {
-      color: white;
-      margin: 0 1rem;
+    nav img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
-
     .hero {
-      text-align: center;
-      padding: 6rem 2rem;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80') no-repeat center center/cover;
+      background: linear-gradient(to right, #0056d2, #007bff);
       color: white;
+      padding: 100px 20px;
+      text-align: center;
     }
-
     .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 48px;
+      margin-bottom: 20px;
     }
-
     .hero p {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      font-size: 20px;
     }
-
-    .button {
-      background-color: #0056b3;
-      padding: 0.75rem 2rem;
-      border: none;
-      color: white;
-      font-size: 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .courses {
-      padding: 4rem 2rem;
+    .section {
+      padding: 60px 20px;
       text-align: center;
     }
-
-    .courses h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #0056d2;
     }
-
-    .course-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
+    .section p {
+      font-size: 18px;
+      color: #555;
     }
-
-    .course-item {
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
       background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      width: 300px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background: #0056d2;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #0041a3;
+    }
     footer {
-      background-color: #003366;
+      background: #003580;
       color: white;
       text-align: center;
-      padding: 1rem 2rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .course-list {
-        flex-direction: column;
-        align-items: center;
-      }
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <div class="logo"><strong>Balajitechforce</strong></div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#courses">Courses</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Launch Your Salesforce Career with Confidence</h1>
-    <p>Expert-Led Training | Real-World Projects | 100% Career Support</p>
-    <a class="button" href="#contact">Enroll Now</a>
-  </section>
+<nav>
+  <div class="logo">
+    <img src="https://via.placeholder.com/50x50.png?text=BTF" alt="Balajitechforce Logo">
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <section id="courses" class="courses">
-    <h2>Our Popular Courses</h2>
-    <div class="course-list">
-      <div class="course-item">
-        <h3>Salesforce Admin Certification</h3>
-        <p>Master Salesforce fundamentals and get certified.</p>
-      </div>
-      <div class="course-item">
-        <h3>Salesforce Developer Bootcamp</h3>
-        <p>Learn Apex, LWC, and Visualforce hands-on.</p>
-      </div>
-      <div class="course-item">
-        <h3>Revenue Cloud Specialization</h3>
-        <p>Deep dive into CPQ, Billing, and Revenue Operations.</p>
-      </div>
-    </div>
-  </section>
+<section class="hero" id="home">
+  <h1>Welcome to Balajitechforce</h1>
+  <p>Empowering Careers in Salesforce for Students, Freshers, and Job Seekers</p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Balajitechforce. All rights reserved.</p>
-  </footer>
+<section class="section" id="courses">
+  <h2>Our Courses</h2>
+  <p>Learn Salesforce Admin, Developer, and Revenue Cloud from Experts!</p>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-form">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Balajitechforce. All rights reserved.
+</footer>
+
 </body>
-
 </html>
