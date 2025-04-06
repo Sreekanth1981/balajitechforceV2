@@ -1,159 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>BalajiTechForce - Salesforce Training</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f2f2f2;
-            color: #333;
-        }
-        header {
-            background: #0a66c2;
-            padding: 10px 20px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header img {
-            height: 50px;
-        }
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .hero {
-            background: #ffffff;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .hero h1 {
-            font-size: 36px;
-            color: #0a66c2;
-        }
-        .hero p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-        .section {
-            padding: 40px 20px;
-            background: white;
-            margin: 20px;
-            border-radius: 8px;
-        }
-        footer {
-            background: #0a66c2;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            color: white;
-            font-size: 24px;
-            text-decoration: none;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-        }
-        .submit-btn {
-            background-color: #0a66c2;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            margin-top: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .submit-btn:hover {
-            background-color: #004a99;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balajitechforce - Salesforce Training Institute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0; padding: 0;
+      background: #f7f9fc;
+    }
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #0b57d0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section:nth-child(even) {
+      background-color: #e8f0fe;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .footer {
+      background-color: #0b57d0;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    img.logo {
+      width: 120px;
+    }
+    .social-icons img {
+      width: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <img src="your-logo.png" alt="BalajiTechForce Logo">
-    <nav>
-        <a href="#courses">Courses</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
+  <img class="logo" src="https://logodownload.org/wp-content/uploads/2022/01/salesforce-logo.png" alt="Logo">
+  <h1>Welcome to Balajitechforce</h1>
+  <p>Your Trusted Salesforce Training Partner Since 2015</p>
 </header>
 
-<section class="hero">
-    <h1>Welcome to BalajiTechForce</h1>
-    <p>Your trusted partner for Salesforce career growth</p>
-    <button onclick="document.getElementById('enrollForm').scrollIntoView({ behavior: 'smooth' });" class="submit-btn">Enroll Now</button>
+<nav>
+  <a href="#courses">Courses</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+  <a href="https://api.whatsapp.com/send?phone=+919885921987" target="_blank">Chat on WhatsApp</a>
+  <a href="https://facebook.com/yourpage" target="_blank">Facebook</a>
+</nav>
+
+<section class="section" id="courses">
+  <h2>Our Salesforce Courses</h2>
+  <p>Expert-led training programs designed for Admins, Developers, and Revenue Cloud professionals.</p>
+  <a class="btn" href="#">Book a Demo</a><br><br>
+  <img src="https://www.salesforceben.com/wp-content/uploads/2022/10/Revenue-Cloud.png" width="70%">
 </section>
 
-<section id="courses" class="section">
-    <h2>Our Courses</h2>
-    <p>Learn Salesforce Admin, Developer, Revenue Cloud, CPQ and much more from real-world experts. Certification-oriented training with hands-on projects.</p>
+<section class="section" id="testimonials">
+  <h2>What Our Students Say</h2>
+  <p>"Balajitechforce helped me land a Salesforce Admin job in 2 months!" – Priya R.</p>
+  <p>"Great hands-on training with real-time projects. Highly recommended." – Mohan T.</p>
 </section>
 
-<section id="testimonials" class="section">
-    <h2>Testimonials</h2>
-    <p>⭐️⭐️⭐️⭐️⭐️ "BalajiTechForce helped me land my first Salesforce Admin job!" - Happy Student</p>
-    <p>⭐️⭐️⭐️⭐️⭐️ "The Revenue Cloud sessions were amazing and practical." - Working Professional</p>
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:support@balajitechforce.com">support@balajitechforce.com</a></p>
+  <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=+919885921987">+91 98859 21987</a></p>
 </section>
 
-<section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form id="enrollForm">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" name="Name" id="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" name="Email" id="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea name="Message" id="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2025 BalajiTechForce. All Rights Reserved.</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/yourpage" target="_blank">📘</a>
-        <a href="https://wa.me/919885921987" target="_blank">💬</a>
-        <a href="mailto:support@balajitechforce.com">✉️</a>
-    </div>
+<footer class="footer">
+  <p>&copy; 2015 Balajitechforce. All rights reserved.</p>
 </footer>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxlQhKzhtmbaNxYnsRpv62lhCFEqKHO74Kqoy7gHHo3ui1cfspG7cUiQZnJeVKQmK6KUA/exec';
-    const form = document.getElementById('enrollForm');
-
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                window.location.href = 'thankyou.html'; // Redirect to Thank You page
-            })
-            .catch(error => {
-                alert('Error!', error.message);
-            });
-    });
-</script>
 
 </body>
 </html>
